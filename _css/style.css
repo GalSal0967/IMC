@@ -1,0 +1,83 @@
+/* Define o estilo básico do body */
+body {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Centraliza verticalmente */
+    height: 100vh;            /* Faz a altura da página ocupar 100% da altura da tela */
+    margin: 0;                /* Remove a margem padrão */
+    background-color: #242424; /* Cor de fundo opcional */
+}
+
+.boxe {
+    background-color: #333;  /* Cor de fundo da div */
+    color: white;             /* Cor do texto */
+    padding: 30px;            /* Espaçamento interno */
+    border-radius: 10px;      /* Bordas arredondadas */
+    text-align: center;       /* Centraliza o texto dentro da div */
+    width: 300px;             /* Largura fixa da div */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra opcional para dar destaque */
+}
+
+input {
+    margin: 10px 0;  /* Espaçamento entre os campos */
+    padding: 10px;    /* Tamanho dos campos */
+    width: 80%;       /* Largura dos campos */
+    border-radius: 5px;
+    border: 1px solid #525252;  /* Borda para os campos de entrada */
+    background-color: #525252;
+}
+
+/* Estilo do texto KG à direita do input */
+.kg {
+    position: absolute;
+    right: 40px;
+    top: 48.5%;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+button {
+    margin-top: 40px;
+    background-color: #419744;  /* Cor de fundo do botão */
+    color: white;               /* Cor do texto no botão */
+    padding: 10px 110px;         /* Tamanho do botão */
+    border: none;
+    border-radius: 5px;         /* Bordas arredondadas */
+    cursor: pointer;            /* Cursor de mão quando passar por cima */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: #45a049;  /* Cor do botão quando o mouse passa por cima */
+}
+
+
+.texto1 {
+    margin-left: -180px;
+    margin-bottom: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.texto2 {
+    margin-left: -145px;
+    margin-bottom: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 45px;
+    
+}
+
+.imagem {
+    width: 60%;
+    height: auto;
+}
