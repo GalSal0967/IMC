@@ -1,4 +1,6 @@
 /* Define o estilo básico do body */
+
+
 body {
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
@@ -25,6 +27,7 @@ input {
     border-radius: 5px;
     border: 1px solid #525252;  /* Borda para os campos de entrada */
     background-color: #525252;
+    color: white;
 }
 
 /* Estilo do texto KG à direita do input */
@@ -78,6 +81,10 @@ h1 {
 }
 
 .imagem {
-    width: 60%;
-    height: auto;
+    width: 450px;
+    padding: 70px 10px 40px;
+}
+
+i {
+    
 }
