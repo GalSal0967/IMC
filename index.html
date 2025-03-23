@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="_css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
@@ -14,18 +16,34 @@
         <h1>Calculadora - IMC</h1>
 
         
-        <p class="texto1">Peso em kg</p>
-        <div class="input_kg">
+       
         
-        <i class="fa-solid fa-weight-hanging"></i>
-        <input   class="input_kg" type="" placeholder="" > 
-        <span class="kg">KG</span>
+        <div class="input_kg">
+            
+            <p class="texto1">Peso em kg</p>
+
+            <div class="input-field">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <input   class="input_kg" type="number" placeholder="" required > 
+                <span>KG</span>
+            </div>
 
         </div>
         
-        <p class="texto2">Altura em metros</p>
-        <input class="input_m"  type="text">
+        <br>
         
+        <div class="input_m">
+            
+            <p class="texto2">Altura em Metros</p>
+
+            <div class="input-field">
+                <i class="fa-solid fa-ruler"></i>
+                <input   class="input_m" type="number" placeholder="" required > 
+                <span>M</span>
+            </div>
+
+        </div>
+
 
         <button>Calcular</button>
     </div>

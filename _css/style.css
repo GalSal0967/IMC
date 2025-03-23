@@ -13,7 +13,7 @@ body {
 .boxe {
     background-color: #333;  /* Cor de fundo da div */
     color: white;             /* Cor do texto */
-    padding: 30px;            /* Espaçamento interno */
+    padding: 40px;            /* Espaçamento interno */
     border-radius: 10px;      /* Bordas arredondadas */
     text-align: center;       /* Centraliza o texto dentro da div */
     width: 300px;             /* Largura fixa da div */
@@ -22,7 +22,6 @@ body {
 
 input {
     margin: 10px 0;  /* Espaçamento entre os campos */
-    padding: 10px;    /* Tamanho dos campos */
     width: 80%;       /* Largura dos campos */
     border-radius: 5px;
     border: 1px solid #525252;  /* Borda para os campos de entrada */
@@ -30,29 +29,19 @@ input {
     color: white;
 }
 
-/* Estilo do texto KG à direita do input */
-.kg {
-    position: absolute;
-    right: 40px;
-    top: 48.5%;
-    transform: translateY(-50%);
-    color: #ffffff;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
 
 
 button {
-    margin-top: 40px;
+    margin-top: 60px;
     background-color: #419744;  /* Cor de fundo do botão */
     color: white;               /* Cor do texto no botão */
-    padding: 10px 110px;         /* Tamanho do botão */
+    padding: 12px 120px;         /* Tamanho do botão */
     border: none;
     border-radius: 5px;         /* Bordas arredondadas */
     cursor: pointer;            /* Cursor de mão quando passar por cima */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+    border-radius: 10px;
 }
 
 button:hover {
@@ -61,23 +50,36 @@ button:hover {
 
 
 .texto1 {
-    margin-left: -180px;
+    margin-left: -185px;
     margin-bottom: -5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .texto2 {
     margin-left: -145px;
     margin-bottom: -5px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 45px;
-    
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block; /* Isso faz com que o h1 se ajuste ao conteúdo */
+}
+
+h1::after {
+    content: ""; /* Adiciona o pseudo-elemento */
+    position: absolute;
+    bottom: 0; /* Coloca o traço na parte inferior */
+    left: 0;
+    width: 50%; /* O traço tem o mesmo comprimento do texto */
+    height: 3px; /* Espessura do traço */
+    background-color: #419744; /* Cor verde */
+    margin-bottom: -4px;
+    border-radius: 3px;
 }
 
 .imagem {
@@ -85,6 +87,35 @@ h1 {
     padding: 70px 10px 40px;
 }
 
-i {
+.input-field {
     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #525252;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.input-field span,
+.input-field i {
+    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+}
+
+
+.input-field input {
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline: none;
 }
