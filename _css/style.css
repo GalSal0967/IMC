@@ -156,6 +156,7 @@ h1::after {
     font-size: 18px;
     font-family: Arial, sans-serif;
     color: white;
+    display: block;
 }
 
 .peso_ideal {
@@ -163,5 +164,6 @@ h1::after {
     font-family: Arial, sans-serif;
     color: white;
     text-align: right; /* Mantém o texto à direita */
+    display: block;
 }
 

@@ -1,69 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
     <link rel="stylesheet" href="_css/style.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
-    <img class="imagem"  src="_img/Design sem nome.svg" alt="">
+    <img class="imagem" src="_img/Design sem nome.svg" alt="">
 
     <div class="boxe">
         <h1>Calculadora - IMC</h1>
-
-        
-       
         
         <div class="input_kg">
-            
             <p class="texto1">Peso em kg</p>
-
             <div class="input-field">
                 <i class="fa-solid fa-weight-hanging"></i>
-                <input   class="input_kg" type="number" placeholder="" required > 
+                <input id="peso" class="input_kg" type="number" placeholder="" required> 
                 <span>KG</span>
             </div>
-
         </div>
         
         <br>
         
         <div class="input_m">
-            
             <p class="texto2">Altura em Metros</p>
-
             <div class="input-field">
                 <i class="fa-solid fa-ruler"></i>
-                <input   class="input_m" type="number" placeholder="" required > 
+                <input id="altura" class="input_m" type="number" placeholder="" step="0.01" required> 
                 <span>M</span>
             </div>
-
         </div>
 
+        <button id="calcular">Calcular</button>
 
-        <button>Calcular</button>
+        <br><br>
 
-        <p></p>
-
-        <div class="resultado">
+        <div class="resultado" id="resultado">
             <div class="imc-info">
-                <span class="numero">20,81</span>
+                <span class="numero" id="imc-valor">0,00</span>
                 <span class="seu_imc">Seu IMC</span>
             </div>
-            <p class="peso_ideal">Você está no peso ideal</p>
+            <p class="peso_ideal" id="classificacao">Informe seus dados</p>
         </div>
         
-
         <div class="more_info">
-            <a   class="info"  href="">Mais Informações sobre o IMC</a>
+            <a class="info" href="">Mais Informações sobre o IMC</a>
         </div>
-
     </div>
 
-
+    <script src="_js/script.js"></script>
 </body>
 </html>
