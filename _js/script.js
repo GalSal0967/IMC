@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const imc = peso / Math.pow(altura, 2);
         const imcFormatado = imc.toFixed(2).replace('.', ',');
         
-        // Mostrar o valor do IMC
+        
         imcValor.textContent = imcFormatado;
         
-        // Determinar a classificação
+        
         let classificacaoText = '';
         if (imc < 18.5) {
             classificacaoText = 'Abaixo do peso';
@@ -38,10 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
             classificacaoText = 'Obesidade grau III';
         }
         
-        // Mostrar a classificação
+        
         classificacao.textContent = classificacaoText;
         
-        // Mostrar o resultado
+        
         resultadoDiv.style.display = 'block';
 
         

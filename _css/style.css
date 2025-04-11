@@ -13,7 +13,7 @@ body {
 .boxe {
     background-color: #333;  /* Cor de fundo da div */
     color: white;             /* Cor do texto */
-    padding: 40px;            /* Espaçamento interno */
+    padding: 50px;            /* Espaçamento interno */
     border-radius: 10px;      /* Bordas arredondadas */
     text-align: center;       /* Centraliza o texto dentro da div */
     width: 300px;             /* Largura fixa da div */
@@ -133,10 +133,8 @@ h1::after {
 }
 
 .resultado {
-    display: flex;
-    justify-content: space-between; /* Mantém o peso ideal na direita */
     align-items: center; /* Alinha os itens verticalmente */
-    padding: 20px;
+    padding-top: 10px;
     border-top: 1px solid #5f5f5f;;
 }
 
@@ -156,14 +154,25 @@ h1::after {
     font-size: 18px;
     font-family: Arial, sans-serif;
     color: white;
-    display: block;
+  
 }
 
 .peso_ideal {
-    font-size: 15px;
+    font-size: 18px;
     font-family: Arial, sans-serif;
     color: white;
-    text-align: right; /* Mantém o texto à direita */
-    display: block;
+
+}
+
+.titulo h1 {
+    color: #ffff;
+    font-size: 25px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px;
 }
 
